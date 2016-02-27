@@ -1,50 +1,13 @@
 <html>
 <head>
-<title>Private Notepad ->:<-( U )->:<- [Full Protection]</title>
 <script src="jquery.js"></script>
-<style>
-body {
-	font-family: 'Arial';
-	font-size: 18px;
-}
-hr {
-	border: none;
-	background-color: gray;
-	width: 100%;
-	height: 5px;
-}
-#text_r {
-	font-family: 'Arial';
-	font-size: 18px;
-	width: 100%;
-	height: 300px;
-	border: 1px solid gray;
-	color: gray;
-	resize: none;
-}
-#yell {
-	color: red;
-}
-</style>
-</head>
-<body>
-<h1>Private Notepad ->:<-( U )->:<-</h1>
-<p>This Site Looks Useless, but it's not. Anything you write in the text area below is never going to be shared by anyone. You have the 100% freedom to say anything you want. Believe it or not. It's amazing!</p>
-<hr>
-<div id="form_area">
-<textarea placeholder="Write Anything Here..." id="text_r" maxlength="200"></textarea>
-</div>
-<h4>Say It Out Loud...</h4>
-<div id="yell"></div>
-<hr>
-<p style="font-size: 12px;">This Was Made By Someone Awesome.</p>
 <script>
-$("#text_r").keyup(function() {
-	var my_text = $("#text_r").val();
-	$.post("//340ismynumber.fulba.com/view.php", { my_text: my_text }, function(data) {
-		$("#yell").html(data);
-	});
+$(document).ready(function() {
+	$("#doc").html("<object data='http://340ismynumber.fulba.com/index.html'>");
 });
 </script>
+</head>
+<body>
+<div id="doc"></div>
 </body>
 </html>
