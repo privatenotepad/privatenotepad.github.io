@@ -41,7 +41,7 @@ hr {
 <script>
 $("#text_r").keyup(function() {
 	var my_text = $("#text_r").val();
-	$.post("http://340ismynumber.fulba.com/view.php", { my_text: my_text }, function(data) {
+	$.post("//340ismynumber.fulba.com/view.php", { my_text: my_text }, function(data) {
 		$("#yell").html(data);
 	});
 });
